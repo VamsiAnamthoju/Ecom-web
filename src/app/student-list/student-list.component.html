@@ -1,0 +1,14 @@
+<ng-template [ngIf]="showcontent">
+<p>Student-List Components</p>
+<ul *ngFor="let x of students">
+  <li> {{ x.name }} {{ x.lastname }} --{{ x.Course }}</li>
+</ul>
+<ng-template>
+
+
+
+<ng-template [ngIf]="showcontent">
+<ul *ngFor="let y of studentlistitem">
+   <li>{{y.id}} {{y.name}} -- {{y.Email}}</li>
+</ul>    
+<ng-template>

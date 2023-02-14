@@ -1,0 +1,92 @@
+<nav class="navbar navbar-light bg-light">
+    <ul class="navbar-nav ">
+      <li ><a class="nav-link active" routerLink="home"> Home </a> </li>
+      <li ><a class="nav-link active" routerLink="user">Contact Us</a></li>
+      <li ><a class="nav-link active" routerLink="users">Help</a></li>
+      <li ><a class="nav-link active" routerLink="studentlist">Logout</a></li>
+    </ul>
+</nav>
+ <router-outlet></router-outlet>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container-fluid">
+    <div class="text-primary" >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"> <a class="nav-link active" aria-current="page" routerLink="/home">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" routerLink="/user">user</a> </li>
+        <li class="nav-item"> <a class="nav-link" routerLink="/users">users </a> </li>
+        <li class="nav-item"> <a class="nav-link" routerLink="/studentlist">Student-list</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet> -->
+
+
+  <!-- <div>
+    <div *ngIf="isusercreate">User is created</div>
+    <div *ngIf="!isusercreate">Click on the button add user to create</div>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let x of users">
+       <td>{{ x.id}}</td>
+       <td>{{x.username}}</td>
+       <td><input type="text" placeholder="vamsi"></td>
+     </tr>x
+    </tbody>
+  </table>
+  <div>    
+    <button (click)="onAddUsers()">Add catagory</button>
+  </div>
+
+
+
+
+
+  <h2>Hello World: ngIf!</h2>
+  <button type="button" (click)="onEditClick()">Make text editable!</button>
+
+
+  <ng-template #noEdit>
+    <p>This is the first paragraph.</p>
+  </ng-template>
+  
+  <div *ngIf="canEdit; else noEdit">
+    <p>This is the second paragraph.</p>
+  </div>
+  <p [contentEditable]="canEdit">{{ message }}</p>
+ -->
+
+  
+
+<!--  2nd TYPE to Display
+            <div>
+    <button class="btn btn-primary btn-sm" (click)="onusercreate()">Add User</button>
+    <div *ngIf="isusercreate; else elseblock "> User is created</div>
+    <ng-template #elseblock>
+    <div>Click on the button add user to create</div>
+     </ng-template>
+  </div>
+
+
+      3rd Type to Display
+
+   <div *ngIf="isusercreate; then thenblock; else elseblock">
+
+     <ng-template #thenblock>  <div>User id created   </div>  </ng-template>
+     <ng-template #elseblock><div>Click on the button </div>  </ng-template>
+   </div>
+
+
+  and we can add multiple ngIf's,
+  use <ng-container> tag without use ng-container tag there is no parent 
+   -->
+
